@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import { Header } from "@/components/ClientShell";
+import { Footer } from "@/components/ClientShell";
 
 export default function ProfilePage() {
     const [status, setStatus] = useState("Not signed in.");

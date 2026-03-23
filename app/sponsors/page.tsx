@@ -1,8 +1,30 @@
 import type { Metadata } from "next";
-import SponsorsClient from "./SponsorsClient";
+import { Suspense } from "react";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+
+import SponsorsContent from "@/components/SponsorsContent";
 
 export const metadata: Metadata = { title: "Sponsors — SEAMUN I" };
 
 export default function SponsorsPage() {
-    return <SponsorsClient />;
+    return (
+        <>
+            <Header />
+            <main>
+                <Suspense
+                    fallback={
+                        <section className="section">
+                            <div className="container">
+                                <p>Loading sponsors...</p>
+                            </div>
+                        </section>
+                    }
+                >
+                    <SponsorsContent />
+                </Suspense>
+            </main>
+            <Footer />
+        </>
+    );
 }

@@ -793,7 +793,8 @@ body {
 
 /* ---- Per-committee gradient backgrounds ---- */
 .home-committee-ecosoc::before {
-  background: linear-gradient(135deg, #1e5f74, #0d3d4f);
+  background: linear-gradient(135deg, #0ea5e9, #0284c7);
+  /* ECOSOC Light Blue */
 }
 
 .home-committee-press::before {
@@ -813,7 +814,8 @@ body {
 }
 
 .home-committee-unwomen::before {
-  background: linear-gradient(135deg, #6d28d9, #4c1d95);
+  background: linear-gradient(135deg, #06b6d4, #0891b2);
+  /* UN Women Cyan/Blue */
 }
 
 .home-committee-disec::before {
@@ -824,12 +826,18 @@ body {
   background: linear-gradient(135deg, #44403c, #1c1917);
 }
 
+.home-committee-fwc .home-committee-logo {
+  max-width: 150px;
+  height: 100px;
+}
+
 .home-committee-interpol::before {
   background: linear-gradient(135deg, #1e40af, #1e3a8a);
 }
 
 .home-committee-who::before {
-  background: linear-gradient(135deg, #0f766e, #134e4a);
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  /* WHO Blue */
 }
 
 /* ====================================================================

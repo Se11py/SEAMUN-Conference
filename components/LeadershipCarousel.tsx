@@ -12,11 +12,11 @@ interface TeamMember {
 const TEAM: TeamMember[] = [
     { role: "Secretary General", name: "Jules K.A.", email: "juleskittoastrop@gmail.com", photo: "/assets/Jules.png" },
     { role: "Deputy Secretary General", name: "Emily H.", email: "emily.yhstudent@sisbschool.com", photo: "/assets/Emily.png" },
-    { role: "Parliamentarian & Head of Logistics", name: "Lotus T.", email: "ladapham14@gmail.com", photo: "/assets/Lotus.png" },
+    { role: "Parliamentarian & Head of Logistics", name: "TBH", email: "", photo: undefined },
     { role: "Head of Delegate Affairs", name: "Dominic S. S.", email: "dominicstott09@gmail.com", photo: "/assets/Dominic.png" },
     { role: "Deputy Head of Finance", name: "Mannan P.", email: "mannanparikh27@gmail.com", photo: "/assets/Mannan.png" },
     { role: "Head of PR & Advertising", name: "Phil", email: "sarana79262@gmail.com", photo: "/assets/Phil.png" },
-    { role: "Head of Media", name: "Ping J.", email: "30bping@regents.ac.th", photo: "/assets/Ping.png" },
+    { role: "Head of Media", name: "TBH", email: "", photo: undefined },
 ];
 
 export default function LeadershipCarousel() {
