@@ -548,7 +548,7 @@ export function getNestedTranslation(obj: any, path: string): string {
         const fallback = path
             .split('.')
             // eslint-disable-next-line @typescript-eslint/no-use-before-define
-            .reduce((acc, part) => (acc && (acc as any)[part] !== undefined ? (acc as any)[part] : undefined), translations.en);
+            .reduce<any>((acc, part) => (acc && (acc as any)[part] !== undefined ? (acc as any)[part] : undefined), translations.en);
 
         if (typeof fallback === "string" && fallback.trim() !== "") {
             return fallback;
