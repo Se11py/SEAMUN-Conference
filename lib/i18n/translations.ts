@@ -514,8 +514,8 @@ export function getTranslation(lang: LanguageCode, path: string): string {
         return fromOverride;
     }
 
-    // 2) Base dictionary for the active language
-    const fromLang = getFrom(translations[lang], path);
+    // 2) Base dictionary for the active language (not all LanguageCodes have a translation entry)
+    const fromLang = getFrom((translations as Partial<Record<LanguageCode, typeof translations.en>>)[lang], path);
     if (
         typeof fromLang === "string" &&
         fromLang.trim() !== "" &&
