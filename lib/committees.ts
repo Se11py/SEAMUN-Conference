@@ -18,16 +18,18 @@ export interface CommitteeData {
 }
 
 export const LOGOS: Record<string, string> = {
-    ecosoc: "/assets/ecosoclogotrans-full.png",
-    press: "/assets/presscorpsemblem-e3b83ea3-1a9b-4ac8-89eb-dc22525d7f50.png",
-    unhrc: "/assets/unhrcemblem-cf4880dc-fd97-4810-893e-cad759e685ed.png",
-    unodc: "/assets/unodcemblem-a5fbe716-a294-4ca6-b854-e483b0be890b.png",
-    unsc: "/assets/unscemblem-63d2a66d-4869-47fc-bddb-eca272b4273f.png",
-    unwomen: "/assets/unwomenemblem-75768fc7-e173-4395-b282-823d48a735d1.png",
-    disec: "/assets/disecemblem-0dcf6e55-f215-434d-9c08-ab82f8e808f5.png",
-    fwc: "/assets/fwclogotrans-full.png",
-    interpol: "/assets/interpolemblem-9d12df52-1131-4853-a8db-447deeb02d6d.png",
-    who: "/assets/whoemblem-bd37b638-7568-40c3-88eb-ecadd89c1592.png",
+    ecosoc: "/assets/committee-pics/ECOSOC.png",
+    press: "/assets/committee-pics/PRESS%20CORP.png",
+    unhrc: "/assets/committee-pics/UNHRC.png",
+    unodc: "/assets/committee-pics/UNODC.png",
+    unsc: "/assets/committee-pics/UNSC.png",
+    unwomen: "/assets/committee-pics/UN%20WOMEN.png",
+    disec: "/assets/committee-pics/DISEC.png",
+    fwc: "/assets/committee-pics/FWC.png",
+    interpol: "/assets/committee-pics/INTERPOL.png",
+    who: "/assets/committee-pics/WHO.png",
+    f1: "/assets/committee-pics/F1.png",
+    hsc: "/assets/committee-pics/HSC.png",
 };
 
 export const LOGO_IS_FULL: Record<string, boolean> = {
@@ -94,6 +96,16 @@ export const COMMITTEES: Record<string, CommitteeData> = {
             { emoji: "🦠", text: "The Question of Examining Measures for Combating, Addressing, and Recovering from Pandemics or Severe Outbreaks", diff: "Advanced" }
         ], topicNote: null, allocations: ["Australia", "Brazil", "Canada", "China", "Ethiopia", "France", "Germany", "India", "Indonesia", "Israel", "Jamaica", "Mexico", "Netherlands", "Norway", "Russia", "Singapore", "South Africa", "Switzerland", "Thailand", "United Kingdom", "United States", "Vietnam"]
     },
+    f1: {
+        name: "F1 (CRISIS)", fullName: "Formula One Committee", type: "Fantasy", grades: "9–12", chairs: "TBD", delegates: "TBD", metaLabel: "Chairs", topics: [
+            { emoji: "🏎️", text: "Agenda to be announced.", diff: "Advanced" }
+        ], topicNote: "More details coming soon.", allocations: []
+    },
+    hsc: {
+        name: "HSC (CRISIS)", fullName: "Historical Security Council", type: "Traditional", grades: "9–12", chairs: "TBD", delegates: "TBD", metaLabel: "Chairs", topics: [
+            { emoji: "📜", text: "Agenda to be announced.", diff: "Advanced" }
+        ], topicNote: "More details coming soon.", allocations: []
+    },
 };
 
 export const COMMITTEE_CARD_DATA: { id: string; dataGrades: string; dataType: string }[] = [
@@ -107,4 +119,6 @@ export const COMMITTEE_CARD_DATA: { id: string; dataGrades: string; dataType: st
     { id: "unodc", dataGrades: "9-12", dataType: "specialized" },
     { id: "ecosoc", dataGrades: "7-12", dataType: "traditional" },
     { id: "fwc", dataGrades: "9-12", dataType: "fantasy" },
+    { id: "f1", dataGrades: "9-12", dataType: "fantasy" },
+    { id: "hsc", dataGrades: "9-12", dataType: "traditional" },
 ];

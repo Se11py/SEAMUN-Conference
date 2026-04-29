@@ -76,20 +76,22 @@ export default function HomeContent() {
         <div className="container">
           <h2 className="section-title" data-animate="right">Committees</h2>
           <p className="section-desc" data-animate>
-            Ten committees. Click a card for topics, allocations, and details.
+            Twelve committees. Click a card for topics, allocations, and details.
           </p>
           <div className="home-committee-cards" data-animate-stagger="">
             {[
-              { id: "ecosoc", logo: "/assets/ecosoclogotrans-full.png", full: true, name: "ECOSOC", info: "Economic and Social Council" },
-              { id: "press", logo: "/assets/presscorpsemblem-e3b83ea3-1a9b-4ac8-89eb-dc22525d7f50.png", full: false, name: "Press Corps", info: "Media" },
-              { id: "unhrc", logo: "/assets/unhrcemblem-cf4880dc-fd97-4810-893e-cad759e685ed.png", full: false, name: "UNHRC", info: "United Nations Human Rights Council" },
-              { id: "unodc", logo: "/assets/unodcemblem-a5fbe716-a294-4ca6-b854-e483b0be890b.png", full: false, name: "UNODC", info: "United Nations Office on Drugs and Crime" },
-              { id: "unsc", logo: "/assets/unscemblem-63d2a66d-4869-47fc-bddb-eca272b4273f.png", full: false, name: "UNSC", info: "United Nations Security Council (CRISIS)" },
-              { id: "unwomen", logo: "/assets/unwomenemblem-75768fc7-e173-4395-b282-823d48a735d1.png", full: false, name: "UN Women", info: "United Nations Entity for Gender Equality and the Empowerment of Women" },
-              { id: "disec", logo: "/assets/disecemblem-0dcf6e55-f215-434d-9c08-ab82f8e808f5.png", full: false, name: "DISEC", info: "Disarmament and International Security Committee" },
-              { id: "fwc", logo: "/assets/fwclogotrans-full.png", full: true, name: "FWC", info: "Fantasy World Committee (CRISIS)" },
-              { id: "interpol", logo: "/assets/interpolemblem-9d12df52-1131-4853-a8db-447deeb02d6d.png", full: false, name: "Interpol", info: "International Criminal Police Organization" },
-              { id: "who", logo: "/assets/whoemblem-bd37b638-7568-40c3-88eb-ecadd89c1592.png", full: false, name: "WHO", info: "World Health Organization" },
+              { id: "ecosoc", logo: "/assets/committee-pics/ECOSOC.png", full: true, name: "ECOSOC", info: "Economic and Social Council" },
+              { id: "press", logo: "/assets/committee-pics/PRESS%20CORP.png", full: false, name: "Press Corps", info: "Media" },
+              { id: "unhrc", logo: "/assets/committee-pics/UNHRC.png", full: false, name: "UNHRC", info: "United Nations Human Rights Council" },
+              { id: "unodc", logo: "/assets/committee-pics/UNODC.png", full: false, name: "UNODC", info: "United Nations Office on Drugs and Crime" },
+              { id: "unsc", logo: "/assets/committee-pics/UNSC.png", full: false, name: "UNSC", info: "United Nations Security Council (CRISIS)" },
+              { id: "unwomen", logo: "/assets/committee-pics/UN%20WOMEN.png", full: false, name: "UN Women", info: "United Nations Entity for Gender Equality and the Empowerment of Women" },
+              { id: "disec", logo: "/assets/committee-pics/DISEC.png", full: false, name: "DISEC", info: "Disarmament and International Security Committee" },
+              { id: "fwc", logo: "/assets/committee-pics/FWC.png", full: true, name: "FWC", info: "Fantasy World Committee (CRISIS)" },
+              { id: "interpol", logo: "/assets/committee-pics/INTERPOL.png", full: false, name: "Interpol", info: "International Criminal Police Organization" },
+              { id: "who", logo: "/assets/committee-pics/WHO.png", full: false, name: "WHO", info: "World Health Organization" },
+              { id: "f1", logo: "/assets/committee-pics/F1.png", full: false, name: "F1", info: "Formula One Committee (CRISIS)" },
+              { id: "hsc", logo: "/assets/committee-pics/HSC.png", full: false, name: "HSC", info: "Historical Security Council (CRISIS)" },
             ].map((c) => (
               <Link
                 key={c.id}
@@ -127,7 +129,7 @@ export default function HomeContent() {
           <div className="schedule-grid">
             <div className="schedule-day" data-animate>
               <h3 className="schedule-day-title">
-                Day 1 — Saturday, January 23, 2027
+                Day 1 — Saturday, January 16, 2027
               </h3>
               <ul className="schedule-list">
                 <li><span className="schedule-time">7:30</span> Arrival</li>
@@ -152,7 +154,7 @@ export default function HomeContent() {
             </div>
             <div className="schedule-day" data-animate>
               <h3 className="schedule-day-title">
-                Day 2 — Sunday, January 24, 2027
+                Day 2 — Sunday, January 17, 2027
               </h3>
               <ul className="schedule-list">
                 <li><span className="schedule-time">8:00</span> Arrival</li>

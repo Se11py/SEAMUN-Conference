@@ -840,6 +840,14 @@ body {
   /* WHO Blue */
 }
 
+.home-committee-f1::before {
+  background: linear-gradient(135deg, #b91c1c, #7f1d1d);
+}
+
+.home-committee-hsc::before {
+  background: linear-gradient(135deg, #0f766e, #134e4a);
+}
+
 /* ====================================================================
    Leadership Carousel
    ==================================================================== */
@@ -1898,6 +1906,14 @@ body.modal-open {
 }
 
 .committee-card-who .committee-card-emblem::before {
+  background: linear-gradient(160deg, #0f766e, #134e4a);
+}
+
+.committee-card-f1 .committee-card-emblem::before {
+  background: linear-gradient(160deg, #b91c1c, #7f1d1d);
+}
+
+.committee-card-hsc .committee-card-emblem::before {
   background: linear-gradient(160deg, #0f766e, #134e4a);
 }
 

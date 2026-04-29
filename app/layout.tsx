@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "SEAMUN I Conference — Mid- & High School MUN",
   description:
-    "SEAMUN I is a mid- and high school Model UN conference (grades 7–12), January 23–24, 2027. Policies with a Purpose.",
+    "SEAMUN I is a mid- and high school Model UN conference (grades 7–12), January 16–17, 2027. Policies with a Purpose.",
   icons: { icon: "/assets/seamun-logo.png" },
 };
 
