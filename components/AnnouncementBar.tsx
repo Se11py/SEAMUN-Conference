@@ -24,7 +24,7 @@ export default function AnnouncementBar() {
             <div className="container announcement-inner">
                 <p className="announcement-text">
                     <strong>SEAMUN I 2027</strong> — Mid- &amp; high school MUN. January
-                    23–24, Bangkok.{" "}
+                    16–17, Bangkok.{" "}
                     <a
                         href="https://forms.gle/iy57uXzA89d3WVYy8"
                         target="_blank"

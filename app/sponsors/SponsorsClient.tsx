@@ -52,7 +52,7 @@ const translations = {
         whereMoneyGoesTitle: "Where the money goes",
         moneyDonationPledge: "<strong>Donation pledge</strong> — 100% of conference surplus is donated to the Thai Red Cross Society.",
         moneyVenue: "<strong>Venue & logistics</strong> — Space for 250 participants, 1 main plenary and 10 breakout rooms, AV and basic catering.",
-        moneyDelegate: "<strong>Delegate experience</strong> — Materials, nameplates, and running a smooth two-day conference (23–24 January 2027).",
+        moneyDelegate: "<strong>Delegate experience</strong> — Materials, nameplates, and running a smooth two-day conference (16–17 January 2027).",
         contactTitle: "Contact",
         contactLead: "To discuss sponsorship or request a partnership pack:",
         contactSecGen: "Secretary General:"

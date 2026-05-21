@@ -30,14 +30,44 @@ export const LOGOS: Record<string, string> = {
     who: "/assets/committee-pics/WHO.png",
     f1: "/assets/committee-pics/F1.png",
     hsc: "/assets/committee-pics/HSC.png",
+    unicef: "/assets/committee-pics/UNICEF.png",
+    eupc: "/assets/committee-pics/EUPC.png",
+    unesco: "/assets/committee-pics/UNESCO.png",
 };
 
 export const LOGO_IS_FULL: Record<string, boolean> = {
     ecosoc: true,
     fwc: true,
+    unicef: true,
+    eupc: true,
+    unesco: true,
 };
 
 export const COMMITTEES: Record<string, CommitteeData> = {
+    unicef: {
+        name: "UNICEF", fullName: "United Nations Children's Fund", type: "Traditional", grades: "7–12", chairs: "2", delegates: "22", metaLabel: "Chairs", topics: [
+            { emoji: "🏥", text: "The question of strengthening maternal, neo-natal, and post-partum healthcare systems to significantly reduce the preventable maternal and infant mortality and morbidity", diff: "Beginner" },
+            { emoji: "👨‍👩‍👧‍👦", text: "The question of recommending policy frameworks to encourage employer-supported flexible work arrangements and parental leave to facilitate early childhood development and strengthen parent-child bonding", diff: "Beginner" }
+        ], topicNote: null, allocations: []
+    },
+    eupc: {
+        name: "EU Parliament", fullName: "European Parliament", type: "Specialized", grades: "9–12", chairs: "2", delegates: "22", metaLabel: "Chairs", topics: [
+            { emoji: "💶", text: "The question of addressing the socio-economic impact of inflation and the rising cost of living on vulnerable populations across Europe", diff: "Intermediate" },
+            { emoji: "⚖️", text: "The question of standardization of criminal and societal policies across Europe to prevent poverty-driven cycles of crime", diff: "Intermediate" }
+        ], topicNote: null, allocations: []
+    },
+    unesco: {
+        name: "UNESCO", fullName: "United Nations Educational, Scientific and Cultural Organization", type: "Traditional", grades: "7–12", chairs: "2", delegates: "22", metaLabel: "Chairs", topics: [
+            { emoji: "🎓", text: "The question of developing and standardizing inclusive education policies and necessary accommodations to ensure full and equitable access to learning for neurodivergent students", diff: "Beginner" },
+            { emoji: "📖", text: "The question of establishing guidelines for the mandatory and comprehensive integration of historical failures, atrocities, and human rights violations into national education curricula to promote reconciliation and prevent future recurrence", diff: "Beginner" }
+        ], topicNote: null, allocations: []
+    },
+    hsc: {
+        name: "HSC (CRISIS)", fullName: "Historical Security Council", type: "Traditional", grades: "9–12", chairs: "2", delegates: "15", metaLabel: "Chairs", topics: [
+            { emoji: "🦠", text: "The SARS Outbreak (2002-2004)", diff: "Advanced" },
+            { emoji: "💀", text: "The Black Death (1346-1353)", diff: "Advanced" }
+        ], topicNote: null, allocations: []
+    },
     ecosoc: {
         name: "ECOSOC", fullName: "Economic and Social Council", type: "Traditional", grades: "7–12", chairs: "2", delegates: "22", metaLabel: "Chairs", topics: [
             { emoji: "💰", text: "The Question of Implementing a Globally Coordinated Universal Basic Income (UBI) Programme as a Strategy for Poverty Eradication and Economic Stability", diff: "Beginner" },
@@ -101,11 +131,6 @@ export const COMMITTEES: Record<string, CommitteeData> = {
             { emoji: "🏎️", text: "Agenda to be announced.", diff: "Advanced" }
         ], topicNote: "More details coming soon.", allocations: []
     },
-    hsc: {
-        name: "HSC (CRISIS)", fullName: "Historical Security Council", type: "Traditional", grades: "9–12", chairs: "TBD", delegates: "TBD", metaLabel: "Chairs", topics: [
-            { emoji: "📜", text: "Agenda to be announced.", diff: "Advanced" }
-        ], topicNote: "More details coming soon.", allocations: []
-    },
 };
 
 export const COMMITTEE_CARD_DATA: { id: string; dataGrades: string; dataType: string }[] = [
@@ -121,4 +146,7 @@ export const COMMITTEE_CARD_DATA: { id: string; dataGrades: string; dataType: st
     { id: "fwc", dataGrades: "9-12", dataType: "fantasy" },
     { id: "f1", dataGrades: "9-12", dataType: "fantasy" },
     { id: "hsc", dataGrades: "9-12", dataType: "traditional" },
+    { id: "unicef", dataGrades: "7-12", dataType: "traditional" },
+    { id: "eupc", dataGrades: "9-12", dataType: "specialized" },
+    { id: "unesco", dataGrades: "7-12", dataType: "traditional" },
 ];
